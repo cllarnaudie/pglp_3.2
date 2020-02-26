@@ -9,4 +9,12 @@ public class TestEmployeSalaire {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void test_calculSalaireBase () {
+		return 1500 + 20*age; 
+	}
+
+	
+	
+	
 }
