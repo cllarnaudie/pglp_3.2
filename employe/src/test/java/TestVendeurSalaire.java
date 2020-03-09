@@ -1,75 +1,54 @@
 package test.java;
 
-import static org.junit.Assert.*;
 import org.junit.Test;
-
-import main.java.EmployeCoordonnees;
-//import static org.junit.Assert.assertEquals;
 import main.java.VendeurSalaire;
 
-
 public class TestVendeurSalaire {
+	
+	@Test
+	public void testcalculSalaire() {
 
-	/*
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}*/
-	/*
-	 * a completer
-	 */
-	
+		System.out.println("testcalculSalaire");
+		System.out.println("");
+		VendeurSalaire vs = new VendeurSalaire(40.12,20);
+     	double res =  vs.calculSalaire(); 
 
-	@Test
-	public void testcalculSalaire () {
-	
-		System.out.println ("testcalculSalaire");
-		System.out.println ("");
-		VendeurSalaire vs = new VendeurSalaire ();
-		//int res = 0; 
-		//assertEquals(res, cpt.getSolde()); 
-		
-		//System.out.println ("le solde est negatif pour le compte bancaire de  " + cpt.getSolde());
-		
-	}
-	
-	@Test
-	public void testcalculSalaireNegative () {
-	
-		System.out.println ("testcalculSalaireNegative");
-		System.out.println ("");
-		VendeurSalaire vs2 = new VendeurSalaire ();
-		//int res = 0; 
-		//assertEquals(res, cpt.getSolde()); 
-		
-		//System.out.println ("le solde est negatif pour le compte bancaire de  " + cpt.getSolde());
-		
+		System.out.println ("le salaire de base est " + res + " \n"); 
 	}
 
-	
 	@Test
-	public void testcalculSalaireCommisionNegative () {
-	
-		System.out.println ("testcalculSalaireCommisionNegative");
-		System.out.println ("");
-		VendeurSalaire vs3 = new VendeurSalaire ();
-		//int res = 0; 
-		//assertEquals(res, cpt.getSolde()); 
-		
-		//System.out.println ("le solde est negatif pour le compte bancaire de  " + cpt.getSolde());
-		
+	public void testcalculSalaireNegative() {
+
+		System.out.println("testcalculSalaireNegative");
+		System.out.println("");
+		VendeurSalaire vs2 = new VendeurSalaire(-40.12,-20);
+		double res2 =  vs2.calculSalaire(); 
+
+		System.out.println ("le salaire de base negative est " + res2 + " \n" ); 
+
 	}
-	
+
 	@Test
-	public void testcalculSalaireBasdNegative () {
-	
-		System.out.println ("testcalculSalaireBasdNegative");
-		System.out.println ("");
-		VendeurSalaire vs4 = new VendeurSalaire ();
-		//int res = 0; 
-		//assertEquals(res, cpt.getSolde()); 
-		
-		//System.out.println ("le solde est negatif pour le compte bancaire de  " + cpt.getSolde());
-		
+	public void testcalculSalaireCommisionNegative() {
+
+		System.out.println("testcalculSalaireCommisionNegative");
+		System.out.println("");
+		VendeurSalaire vs3 = new VendeurSalaire(-24.12,22);
+		double res3 =  vs3.calculSalaire(); 
+
+		System.out.println ("le salaire de base avec une commission negative est " + res3 + " \n"); 
+
+	}
+
+	@Test
+	public void testcalculSalaireBasdNegative() {
+
+		System.out.println("testcalculSalaireBasdNegative");
+		System.out.println("");
+		VendeurSalaire vs4 = new VendeurSalaire(-20.13,47);
+		double res4 =  vs4.calculSalaire(); 
+
+		System.out.println ("le salaire de base negative est " + res4 + " \n"); 
+
 	}
 }
