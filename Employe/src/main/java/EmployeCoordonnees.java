@@ -5,18 +5,22 @@ public class EmployeCoordonnees {
 	private final String nom;
 	private final String adresse;
 
+	/**
+	 * 
+	 * @param nom
+	 * @param adresse
+	 */
 	public EmployeCoordonnees(String nom, String adresse) {
-		if (nom.equals("")  ) {
+		if (nom.equals("")) {
 			nom = "inconnue";
-			
 			}
-		if (adresse.equals ("") ) {
+		
+		if (adresse.equals("")) {
 			adresse = "inconnue";
 			}
 		
 		this.nom = nom;
 		this.adresse = adresse; 
-
 	}
 
 

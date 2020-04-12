@@ -6,9 +6,9 @@ public class VendeurSalaire extends EmployeSalaire {
 
 	public VendeurSalaire(double commision, int anciennete) {
 		super(anciennete);
-		if (commision < 0 ) {
+		if (commision < 0) {
 			commision = 0;
-			System.out.println ("commision négative - la valeur prise en compte est zéro");
+			System.out.println("commision négative - la valeur prise en compte est zéro");
 		}
 		this.commision = commision;
 	}

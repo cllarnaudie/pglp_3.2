@@ -5,9 +5,9 @@ public class Manager extends EmployeSalaire {
 
 	public Manager(int nombrepersonne, int anciennete) {
 		super(anciennete); 
-		if (nombrepersonne < 0 ) {
+		if (nombrepersonne < 0) {
 			nombrepersonne = 0;
-			System.out.println (" nombrepersonne négative - la valeur prise en compte est zéro");
+			System.out.println(" nombrepersonne négative - la valeur prise en compte est zéro");
 		}
 		this.nombrepersonne = nombrepersonne;
 	}
@@ -15,7 +15,4 @@ public class Manager extends EmployeSalaire {
 	public double calculSalaire() {
 		return calculSalaireBase() + 100 * nombrepersonne;
 	}
-
-	
-	
 }
