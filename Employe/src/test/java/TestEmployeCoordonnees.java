@@ -17,7 +17,7 @@ public class TestEmployeCoordonnees {
 
 		EmployeCoordonnees coord = new EmployeCoordonnees("Camille", "Desmoulins");
 		coord.afficheCoordonnees();
-
+		
 	}
 
 	@Test
@@ -37,7 +37,6 @@ public class TestEmployeCoordonnees {
 		System.out.println(" ");
 		EmployeCoordonnees coord3 = new EmployeCoordonnees(" ", "Versailles");
 		coord3.afficheCoordonnees();
-
 	}
 
 	@Test
@@ -47,7 +46,6 @@ public class TestEmployeCoordonnees {
 		System.out.println(" ");
 		EmployeCoordonnees coord4 = new EmployeCoordonnees("Louise"," ");
 		coord4.afficheCoordonnees();
-
 	}
 
 }

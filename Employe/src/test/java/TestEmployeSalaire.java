@@ -14,8 +14,6 @@ public class TestEmployeSalaire {
 		double res =  sb.calculSalaireBase(); 
 
 		System.out.println ("le salaire de base est " + res + " \n"); 
-
-
 	}
 
 	@Test
@@ -51,7 +49,6 @@ public class TestEmployeSalaire {
 
 		double res4 =  sb5.calculSalaireBase(); 
 		System.out.println ("le salaire de base si age a une valeur negative est " + res4 + " \n"); 
-
 
 	}
 

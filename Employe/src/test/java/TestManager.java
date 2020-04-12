@@ -2,11 +2,9 @@ package test.java;
 
 
 import org.junit.Test;
-
 import main.java.Manager;
 
 public class TestManager {
-
 
 	@Test
 	public void testcalculSalaire() {
@@ -28,7 +26,6 @@ public class TestManager {
 		Manager mg2 = new Manager(90,50);
 		double res2 =  mg2.calculSalaireBase(); 
 	
-
 		System.out.println ("le salaire de base inferieur a cent est " + res2 + " \n"); 
 	}
 

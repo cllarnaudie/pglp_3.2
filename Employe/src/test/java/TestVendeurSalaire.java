@@ -11,9 +11,9 @@ public class TestVendeurSalaire {
 		System.out.println("testcalculSalaire");
 		System.out.println("");
 		VendeurSalaire vs = new VendeurSalaire(40.12,20);
-     	double res =  vs.calculSalaire(); 
+     	double res = vs.calculSalaire(); 
 
-		System.out.println ("le salaire de base est " + res + " \n"); 
+		System.out.println("le salaire de base est " + res + " \n"); 
 	}
 
 	@Test
@@ -22,9 +22,9 @@ public class TestVendeurSalaire {
 		System.out.println("testcalculSalaireNegative");
 		System.out.println("");
 		VendeurSalaire vs2 = new VendeurSalaire(-40.12,-20);
-		double res2 =  vs2.calculSalaire(); 
+		double res2 = vs2.calculSalaire(); 
 
-		System.out.println ("le salaire de base negative est " + res2 + " \n" ); 
+		System.out.println("le salaire de base negative est " + res2 + " \n" ); 
 
 	}
 
@@ -34,9 +34,9 @@ public class TestVendeurSalaire {
 		System.out.println("testcalculSalaireCommisionNegative");
 		System.out.println("");
 		VendeurSalaire vs3 = new VendeurSalaire(-24.12,22);
-		double res3 =  vs3.calculSalaire(); 
+		double res3 = vs3.calculSalaire(); 
 
-		System.out.println ("le salaire de base avec une commission negative est " + res3 + " \n"); 
+		System.out.println("le salaire de base avec une commission negative est " + res3 + " \n"); 
 
 	}
 
@@ -46,9 +46,9 @@ public class TestVendeurSalaire {
 		System.out.println("testcalculSalaireBasdNegative");
 		System.out.println("");
 		VendeurSalaire vs4 = new VendeurSalaire(-20.13,47);
-		double res4 =  vs4.calculSalaire(); 
+		double res4 = vs4.calculSalaire(); 
 
-		System.out.println ("le salaire de base negative est " + res4 + " \n"); 
+		System.out.println("le salaire de base negative est " + res4 + " \n"); 
 
 	}
 }
